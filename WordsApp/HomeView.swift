@@ -43,7 +43,7 @@ struct HomeView: View {
 
                             Image(systemName: "magnifyingglass").font(.system(size: 24)).padding()
                     }
-                }.padding()
+                }
                 
                 Spacer()
             }.padding()

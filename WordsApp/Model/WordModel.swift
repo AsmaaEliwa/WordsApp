@@ -15,7 +15,7 @@ struct WordModel:Codable{
 struct detailsModel:Codable{
     let definition:String
     let partOfSpeech:String
-    let synonyms : [String]
+    let synonyms : [String]?
 }
 
 
