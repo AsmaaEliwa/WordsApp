@@ -9,9 +9,13 @@ import Foundation
 struct WordModel:Codable{
     let word:String
     let results:[detailsModel]
+    
 }
 
 struct detailsModel:Codable{
     let definition:String
     let partOfSpeech:String
+    let synonyms : [String]
 }
+
+

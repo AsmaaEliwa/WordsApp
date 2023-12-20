@@ -22,6 +22,7 @@
 		7FA803542B339C5C00E87A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803532B339C5C00E87A60 /* HomeView.swift */; };
 		7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803552B33A08E00E87A60 /* searchResultView.swift */; };
 		7FA803582B33A38D00E87A60 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803572B33A38D00E87A60 /* WordView.swift */; };
+		7FA8035A2B33A60C00E87A60 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803592B33A60C00E87A60 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7FA803532B339C5C00E87A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7FA803552B33A08E00E87A60 /* searchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultView.swift; sourceTree = "<group>"; };
 		7FA803572B33A38D00E87A60 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		7FA803592B33A60C00E87A60 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +118,12 @@
 				7FA803272B33917F00E87A60 /* Persistence.swift */,
 				7FA803292B33917F00E87A60 /* WordsApp.xcdatamodeld */,
 				7FA803242B33917F00E87A60 /* Preview Content */,
-				7FA8034D2B33922200E87A60 /* APIManger.swift */,
-				7FA8034F2B33934000E87A60 /* NetworkManger.swift */,
-				7FA803512B339ADE00E87A60 /* WordModel.swift */,
+				7FA8035B2B33AC5D00E87A60 /* APIDataManger */,
+				7FA8035C2B33AC8400E87A60 /* Model */,
 				7FA803532B339C5C00E87A60 /* HomeView.swift */,
 				7FA803552B33A08E00E87A60 /* searchResultView.swift */,
 				7FA803572B33A38D00E87A60 /* WordView.swift */,
+				7FA803592B33A60C00E87A60 /* SplashView.swift */,
 			);
 			path = WordsApp;
 			sourceTree = "<group>";
@@ -149,6 +151,23 @@
 				7FA803402B33918000E87A60 /* WordsAppUITestsLaunchTests.swift */,
 			);
 			path = WordsAppUITests;
+			sourceTree = "<group>";
+		};
+		7FA8035B2B33AC5D00E87A60 /* APIDataManger */ = {
+			isa = PBXGroup;
+			children = (
+				7FA8034D2B33922200E87A60 /* APIManger.swift */,
+				7FA8034F2B33934000E87A60 /* NetworkManger.swift */,
+			);
+			path = APIDataManger;
+			sourceTree = "<group>";
+		};
+		7FA8035C2B33AC8400E87A60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA803512B339ADE00E87A60 /* WordModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA803502B33934000E87A60 /* NetworkManger.swift in Sources */,
+				7FA8035A2B33A60C00E87A60 /* SplashView.swift in Sources */,
 				7FA803282B33917F00E87A60 /* Persistence.swift in Sources */,
 				7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */,
 				7FA8032B2B33917F00E87A60 /* WordsApp.xcdatamodeld in Sources */,
