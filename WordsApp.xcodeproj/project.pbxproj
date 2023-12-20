@@ -16,6 +16,12 @@
 		7FA803352B33918000E87A60 /* WordsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803342B33918000E87A60 /* WordsAppTests.swift */; };
 		7FA8033F2B33918000E87A60 /* WordsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8033E2B33918000E87A60 /* WordsAppUITests.swift */; };
 		7FA803412B33918000E87A60 /* WordsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803402B33918000E87A60 /* WordsAppUITestsLaunchTests.swift */; };
+		7FA8034E2B33922200E87A60 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8034D2B33922200E87A60 /* APIManger.swift */; };
+		7FA803502B33934000E87A60 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8034F2B33934000E87A60 /* NetworkManger.swift */; };
+		7FA803522B339ADE00E87A60 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803512B339ADE00E87A60 /* WordModel.swift */; };
+		7FA803542B339C5C00E87A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803532B339C5C00E87A60 /* HomeView.swift */; };
+		7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803552B33A08E00E87A60 /* searchResultView.swift */; };
+		7FA803582B33A38D00E87A60 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803572B33A38D00E87A60 /* WordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		7FA8033A2B33918000E87A60 /* WordsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA8033E2B33918000E87A60 /* WordsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsAppUITests.swift; sourceTree = "<group>"; };
 		7FA803402B33918000E87A60 /* WordsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FA8034D2B33922200E87A60 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
+		7FA8034F2B33934000E87A60 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		7FA803512B339ADE00E87A60 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		7FA803532B339C5C00E87A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7FA803552B33A08E00E87A60 /* searchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultView.swift; sourceTree = "<group>"; };
+		7FA803572B33A38D00E87A60 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,12 @@
 				7FA803272B33917F00E87A60 /* Persistence.swift */,
 				7FA803292B33917F00E87A60 /* WordsApp.xcdatamodeld */,
 				7FA803242B33917F00E87A60 /* Preview Content */,
+				7FA8034D2B33922200E87A60 /* APIManger.swift */,
+				7FA8034F2B33934000E87A60 /* NetworkManger.swift */,
+				7FA803512B339ADE00E87A60 /* WordModel.swift */,
+				7FA803532B339C5C00E87A60 /* HomeView.swift */,
+				7FA803552B33A08E00E87A60 /* searchResultView.swift */,
+				7FA803572B33A38D00E87A60 /* WordView.swift */,
 			);
 			path = WordsApp;
 			sourceTree = "<group>";
@@ -263,9 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA803502B33934000E87A60 /* NetworkManger.swift in Sources */,
 				7FA803282B33917F00E87A60 /* Persistence.swift in Sources */,
+				7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */,
 				7FA8032B2B33917F00E87A60 /* WordsApp.xcdatamodeld in Sources */,
+				7FA8034E2B33922200E87A60 /* APIManger.swift in Sources */,
 				7FA803212B33917C00E87A60 /* ContentView.swift in Sources */,
+				7FA803582B33A38D00E87A60 /* WordView.swift in Sources */,
+				7FA803542B339C5C00E87A60 /* HomeView.swift in Sources */,
+				7FA803522B339ADE00E87A60 /* WordModel.swift in Sources */,
 				7FA8031F2B33917C00E87A60 /* WordsAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
