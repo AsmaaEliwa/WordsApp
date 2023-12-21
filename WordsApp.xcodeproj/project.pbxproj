@@ -23,6 +23,9 @@
 		7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803552B33A08E00E87A60 /* searchResultView.swift */; };
 		7FA803582B33A38D00E87A60 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803572B33A38D00E87A60 /* WordView.swift */; };
 		7FA8035A2B33A60C00E87A60 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803592B33A60C00E87A60 /* SplashView.swift */; };
+		7FA8035E2B34610300E87A60 /* CacheManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8035D2B34610300E87A60 /* CacheManger.swift */; };
+		7FA803602B3461A500E87A60 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8035F2B3461A500E87A60 /* SearchViewModel.swift */; };
+		7FA803622B3462D400E87A60 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA803612B3462D400E87A60 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		7FA803552B33A08E00E87A60 /* searchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultView.swift; sourceTree = "<group>"; };
 		7FA803572B33A38D00E87A60 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		7FA803592B33A60C00E87A60 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		7FA8035D2B34610300E87A60 /* CacheManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManger.swift; sourceTree = "<group>"; };
+		7FA8035F2B3461A500E87A60 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7FA803612B3462D400E87A60 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,9 @@
 				7FA803552B33A08E00E87A60 /* searchResultView.swift */,
 				7FA803572B33A38D00E87A60 /* WordView.swift */,
 				7FA803592B33A60C00E87A60 /* SplashView.swift */,
+				7FA8035D2B34610300E87A60 /* CacheManger.swift */,
+				7FA8035F2B3461A500E87A60 /* SearchViewModel.swift */,
+				7FA803612B3462D400E87A60 /* HistoryView.swift */,
 			);
 			path = WordsApp;
 			sourceTree = "<group>";
@@ -305,11 +314,14 @@
 				7FA803282B33917F00E87A60 /* Persistence.swift in Sources */,
 				7FA803562B33A08E00E87A60 /* searchResultView.swift in Sources */,
 				7FA8032B2B33917F00E87A60 /* WordsApp.xcdatamodeld in Sources */,
+				7FA803602B3461A500E87A60 /* SearchViewModel.swift in Sources */,
 				7FA8034E2B33922200E87A60 /* APIManger.swift in Sources */,
+				7FA803622B3462D400E87A60 /* HistoryView.swift in Sources */,
 				7FA803212B33917C00E87A60 /* ContentView.swift in Sources */,
 				7FA803582B33A38D00E87A60 /* WordView.swift in Sources */,
 				7FA803542B339C5C00E87A60 /* HomeView.swift in Sources */,
 				7FA803522B339ADE00E87A60 /* WordModel.swift in Sources */,
+				7FA8035E2B34610300E87A60 /* CacheManger.swift in Sources */,
 				7FA8031F2B33917C00E87A60 /* WordsAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

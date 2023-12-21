@@ -15,10 +15,19 @@ struct HomeView: View {
     @State var query:String = ""
     @State var isSearching = false
     @State var category: SearchCategory = .definition
+    @State var viewModel:SearchViewModel
+    init(){
+        viewModel = SearchViewModel.shared
+    }
     var body: some View {
        
             VStack{
-                Text("Hello, User!")
+                HStack{
+                    Text("Hello, User!")
+                    NavigationLink(destination:HistoryView()){
+                        Text("history")
+                    }
+                }
                 Spacer()
                 Picker("Category", selection: $category) {
                                    Text("Definition").tag(SearchCategory.definition)
@@ -35,10 +44,13 @@ struct HomeView: View {
                             
                             if let result = word {
                                 data = result
+                              
                                 
                             }
                         })
+                        viewModel.addWordToCache(query)
                         isSearching = true
+                     
                     }label: {
 
                             Image(systemName: "magnifyingglass").font(.system(size: 24))
@@ -54,6 +66,6 @@ struct HomeView: View {
     
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+////    HomeView()
+//}
