@@ -13,7 +13,7 @@ struct WordsAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

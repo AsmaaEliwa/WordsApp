@@ -6,17 +6,36 @@
 //
 
 import SwiftUI
-
 struct SplashView: View {
-    @State var selectedView = 1
     var body: some View {
-        TabView(selection: $selectedView,
-                content:  {
-            HomeView().tabItem { Image(systemName: "magnifyingglass") }.tag(1)
-            Text("Tab Content 2").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 2")/*@END_MENU_TOKEN@*/ }.tag(2)
-        })
+        NavigationView {
+            ZStack {
+                Image("Image")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .ignoresSafeArea()
+//                Color.black.opacity(0.5).ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    NavigationLink(destination: HomeView()) {
+                        Text("Get Started")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .foregroundColor(.blue)
+                            )
+                            .padding()
+                    }
+                }
+            }
+            .navigationBarHidden(true)
+        }
     }
 }
+
 
 #Preview {
     SplashView()

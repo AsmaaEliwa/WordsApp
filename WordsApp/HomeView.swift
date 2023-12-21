@@ -16,7 +16,7 @@ struct HomeView: View {
     @State var isSearching = false
     @State var category: SearchCategory = .definition
     var body: some View {
-        NavigationStack{
+       
             VStack{
                 Text("Hello, User!")
                 Spacer()
@@ -41,9 +41,9 @@ struct HomeView: View {
                         isSearching = true
                     }label: {
 
-                            Image(systemName: "magnifyingglass").font(.system(size: 24)).padding()
+                            Image(systemName: "magnifyingglass").font(.system(size: 24))
                     }
-                }
+                }.padding()
                 
                 Spacer()
             }.padding()
@@ -51,7 +51,7 @@ struct HomeView: View {
                 EmptyView()
             }
         }
-    }
+    
 }
 
 #Preview {
