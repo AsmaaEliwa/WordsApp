@@ -6,44 +6,35 @@
 //
 
 import Foundation
+
 class CacheManager {
     static let shared = CacheManager()
     private let cache = NSCache<NSString, NSString>()
+    private let maxCacheSize = 10
+    private var queue: [String] = []
 
     private init() {}
 
     func cacheWord(_ word: String) {
-        if let currentCount = cache.object(forKey: "count") as? String,
-           var count = Int(currentCount), count < 10 {
-            
-            count += 1
-            cache.setObject(NSString(string: "\(count)"), forKey: "count")
-            cache.setObject(NSString(string: word), forKey: NSString(string: "\(count)"))
-            print("\(word) added to Cache")
-            
-        } else {
-            resetCache()
-            cache.setObject("1", forKey: "count")
-            
-            cache.setObject(NSString(string: word), forKey: "1")
+        // Remove the oldest entry if the queue reached its max size
+        if queue.count == maxCacheSize {
+            let oldestWord = queue.removeFirst()
+            cache.removeObject(forKey: NSString(string: oldestWord))
         }
+
+        // Add the new word
+        queue.append(word)
+        cache.setObject(NSString(string: word), forKey: NSString(string: word))
+        print("\(word) added to Cache")
     }
 
     func getCachedWords() -> [String] {
         var words = [String]()
-        if let currentCount = cache.object(forKey: "count") as? String,
-           let count = Int(currentCount) {
-            for i in 1...count {
-                if let word = cache.object(forKey: NSString(string: "\(i)")) as String? {
-                    words.append(word)
-                }
+        for word in queue {
+            if let cachedWord = cache.object(forKey: NSString(string: word)) as String? {
+                words.append(cachedWord)
             }
         }
-        
         return words
-    }
-
-    private func resetCache() {
-        cache.removeAllObjects()
     }
 }
